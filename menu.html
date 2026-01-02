@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Menu - Prime Caffe West LA</title>
+    <meta
+      name="description"
+      content="View the full menu for Prime Caffe West LA. Breakfast burritos, waffles, sandwiches, boba, smoothies, and specialty coffee on Sepulveda Blvd."
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> PRIME CAFFE WEST LA </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="btn"
+            id="sign-up-button"
+            onclick="window.location.href='ordernow.html'"
+          >
+            ORDER NOW
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header class="menu-hero">
+      <div class="container text-center">
+        <h1 id="header-text">Our Menu</h1>
+        <p class="header-p">
+          Fresh brew, delicious food, and the best vibes in West LA.
+        </p>
+      </div>
+    </header>
+
+    <nav class="category-nav" id="categoryNav">
+      <div class="container">
+        <button class="category-toggle" id="categoryToggle">
+          <span>Categories</span>
+          <i class="toggle-icon">▼</i>
+        </button>
+        <ul class="category-list" id="categoryList">
+          <li><a href="#popular" class="category-link">Most Popular</a></li>
+          <li><a href="#breakfast" class="category-link">Breakfast</a></li>
+          <li><a href="#waffles" class="category-link">Waffles</a></li>
+          <li><a href="#sandwiches" class="category-link">Sandwiches</a></li>
+          <li><a href="#wraps" class="category-link">Wraps</a></li>
+          <li>
+            <a href="#toasts" class="category-link">Toasts & Quesadillas</a>
+          </li>
+          <li><a href="#salads" class="category-link">Salads</a></li>
+          <li><a href="#vegan" class="category-link">Vegan</a></li>
+          <li><a href="#kids" class="category-link">Kids</a></li>
+          <li><a href="#coffee" class="category-link">Espresso</a></li>
+          <li><a href="#tea" class="category-link">Tea & Boba</a></li>
+          <li><a href="#cold" class="category-link">Cold Drinks</a></li>
+          <li><a href="#smoothies" class="category-link">Smoothies</a></li>
+          <li><a href="#acai" class="category-link">Acai & Sides</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="popular" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-2 menu-title">Most Popular</h2>
+        <p class="text-center mb-5 text-muted">
+          Best sellers — hand-picked for you
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/breakfast-burrito.jpg"
+                alt="Breakfast Burrito"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2">$11.50</span>
+                <h3>Breakfast Burrito</h3>
+                <p>
+                  Scrambled eggs, jack cheese, fresh guacamole, pico de gallo,
+                  black beans and breakfast potatoes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/extreme-waffle.jpg"
+                alt="Extreme Waffle"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2">$13.50</span>
+                <h3>Extreme Waffle</h3>
+                <p>
+                  Strawberries, banana, blueberries, Nutella and ice cream
+                  syrup.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/coffee-latte.jpg"
+                alt="Dolce Latte"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2">$5.50</span>
+                <h3>Dolce Latte</h3>
+                <p>
+                  Signature espresso drink. Ice or hot, milk sweetened with
+                  condensed milk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="breakfast" class="services-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">All-Day Breakfast</h2>
+          <p class="text-muted">Served all day, every day.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-bread-slice menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Classics & Combos</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Prime House Breakfast</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Choice of fried or scrambled eggs, chicken sausage or
+                    bacon, bread and butter on the side.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">French Toast Combo</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$14.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Brioche dipped on our secret butter. Two scrambled eggs (or
+                    cook choice) with bacon or chicken sausage.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Waffle Combo</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$14.50</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-cooking-pot-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Sandwiches & Scrambles</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Egg Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$11.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Ciabatta bread, mayo, onions, scrambled eggs, avocado and
+                    tomatoes. Side of mix green salad.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Breakfast Burrito</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$11.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Scrambled eggs, jack cheese, fresh guacamole, pico de
+                    gallo, black beans and breakfast potatoes.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Breakfast Croissant Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$7.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh butter croissant with eggs and jack cheese.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Salmon Scramble</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.75</span>
+                  </div>
+                </li>
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Spicy Sausage Scramble</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                </li>
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Spinach Scramble</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                </li>
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Salmon Bagel Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.50</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="waffles" class="services-section py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Waffles</h2>
+          <p class="text-muted">Indulgent treats for the perfect morning.</p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-8">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-cnsuxl-ice-cream-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Signature Waffles</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Extreme Waffle</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.50</span>
+                  </div>
+                  <small class="description-text"
+                    >The most famous homemade waffle garnished with
+                    strawberries, bananas, blueberries, Nutella and ice cream
+                    syrup.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Caramel Churro Waffle</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Topped with freshly made whip cream, caramel sauce and
+                    churro seasoning. Garnished with strawberries.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Oreo Waffle</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh waffle topped with fresh whipped cream, Nutella and
+                    Oreo crumbs.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Vanutella Waffle</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Regular Waffle</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$8.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh made waffle, butter and syrup on the side.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Regular French Toast</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Brioche garnished with strawberries, blueberries, sugar
+                    powder, Nutella and syrup.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sandwiches" class="services-section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Sandwiches</h2>
+          <p class="text-muted">
+            Lunch favorites served on fresh, toasted bread.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-sandwich-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Signature Favorites</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Spicy Chicken Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Spicy chicken on ciabatta bread, chipotle mayo, jalapeños,
+                    pepper jack cheese and cilantro. Served with salad.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Chicken Pesto Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Grilled chicken on ciabatta bread, pesto, lettuce,
+                    tomatoes. Side of mix green salad.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Bacon Avocado (BLT)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh avocado, onions, lettuce, tomato and bacon. Comes
+                    with mix green salad.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Bacon Turkey Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Bacon, turkey, tomato, avocado, onions, mayonnaise on
+                    sourdough bread.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-house-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Classic Deli</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Turkey Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Oven turkey on ciabatta bread, mayo, mustard, lettuce,
+                    tomatoes. Side of salad.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Tuna Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Albacore tuna mix with romaine lettuce, tomatoes and
+                    mayonnaise on ciabatta bread.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Mozzarella Basil Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh mozzarella, pesto, basil, sundried tomatoes, fresh
+                    tomatoes, balsamic glaze.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Vegan Sandwich</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wraps" class="services-section py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Wraps</h2>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-8">
+            <div class="menu-card">
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Bacon Turkey Wrap</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Bacon, turkey, tomato, onions, avocado, chipotle mayo,
+                    romaine lettuce wrapped in flour tortilla. Salad on the
+                    side.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Chicken Caesar Wrap</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="toasts" class="services-section py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-avocado-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Toasts & Quesadillas</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Caprese Avocado Toast</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh guacamole, fresh mozzarella, basil, tomatoes, chili
+                    flakes with balsamic glaze. Salad on the side.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Regular Avocado Toast</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$12.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh mashed avocado (salt, lime, cilantro, onion), chili
+                    flakes, ricotta cheese and micro cilantro.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Chicken Quesadilla</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Flour tortilla with grilled chicken, peppers, onions, jack
+                    cheese. Beans & pico on the side.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Bagel with Cream Cheese</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$3.50</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-leaf-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Salads & Vegan</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Kale Salad</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$11.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh green kale, cucumbers, cherry tomatoes, ricotta
+                    cheese, onions, avocado with Italian dressing.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Caesar Salad</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$11.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Romaine lettuce, croutons, tomatoes, parmesan cheese with
+                    Caesar Dressing.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Mediterranean Salad</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$11.75</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name" style="color: var(--prime-green)"
+                      >Vegan Burrito</span
+                    >
+                    <span class="dots"></span>
+                    <span class="item-price">$12.55</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name" style="color: var(--prime-green)"
+                      >Vegan Sandwich</span
+                    >
+                    <span class="dots"></span>
+                    <span class="item-price">$13.25</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kids" class="services-section py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Kids Menu</h2>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-8">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-smile-solid menu-icon"></i>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Kids Scramble</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$9.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Two scrambled eggs with strawberry and bananas.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Kids Grilled Cheese</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$9.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Grilled jack cheese on toasted sourdough with strawberries
+                    and bananas.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Kids Cheese Quesadilla</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$9.25</span>
+                  </div>
+                  <small class="description-text"
+                    >Cheese quesadilla with black beans, pico de gallo and
+                    guacamole on the side.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coffee" class="services-section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Coffee & Tea</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-coffee-cup menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Espresso Drinks</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Dolce Latte (Signature)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Ice or hot, sweetened with condensed milk.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Caramel Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Vanilla Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">House Mocha</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.75</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Cappuccino</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$4.00</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.00</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Regular Drip Coffee</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$3.25</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-leaf-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title" id="tea">Tea & Boba</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Chai Tea Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Made with chai tea, milk and vanilla or honey
+                    flavor.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Matcha Tea Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Black Tea Latte</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Black tea with milk and vanilla.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Chai Tea Boba</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.75</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Thai Tea Boba</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.75</span>
+                  </div>
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Matcha Coconut Boba</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$5.75</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4" id="cold">
+          <div class="col-lg-12">
+            <div class="menu-card">
+              <h3 class="menu-category-title">Cold Drinks</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="menu-list">
+                    <li class="menu-item d-flex justify-content-between">
+                      <span>Cold Brew</span><span class="dots"></span
+                      ><span class="item-price">$4.75</span>
+                    </li>
+                    <li class="menu-item d-flex justify-content-between">
+                      <span>Arnold Palmer</span><span class="dots"></span
+                      ><span class="item-price">$4.75</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="menu-list">
+                    <li class="menu-item d-flex justify-content-between">
+                      <span>Lemonade</span><span class="dots"></span
+                      ><span class="item-price">$4.50</span>
+                    </li>
+                    <li class="menu-item d-flex justify-content-between">
+                      <span>Iced Tea</span><span class="dots"></span
+                      ><span class="item-price">$4.00</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="smoothies" class="services-section py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Smoothies</h2>
+          <p class="text-muted">Fresh fruit blends.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
+            <div class="menu-card">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-glass-solid menu-icon"></i>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Strawberry Banana</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$6.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Fresh fruit, ice and vanilla syrup.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Mango Pineapple</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$6.75</span>
+                  </div>
+                  <small class="description-text">Fresh fruit.</small>
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Green Kale Smoothie</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$6.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Seasonal green kale, pineapple, banana and mango (no milk
+                    added).</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Banana Blueberry</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$6.75</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="acai" class="services-section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Acai Bowls & Sides</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-bowl-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Acai Bowls</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Original Acai Bowl</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$10.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Strawberries, bananas, pineapple, blueberries, granola,
+                    almonds, coconut shavings and chia seeds.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Peanut Butter Acai Bowl</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$10.75</span>
+                  </div>
+                  <small class="description-text"
+                    >Topped with Peanut Butter.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Dragon Fruit (Pitaya) Bowl</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$10.75</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="fi-xnsuxl-plus-solid menu-icon"></i>
+              </div>
+              <h3 class="menu-category-title">Sides & Pastries</h3>
+              <ul class="menu-list">
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Chocolate Croissant</span><span class="dots"></span
+                  ><span class="item-price">$3.50</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Almond Croissant</span><span class="dots"></span
+                  ><span class="item-price">$3.50</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Side of Potatoes</span><span class="dots"></span
+                  ><span class="item-price">$4.00</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Side of Bacon</span><span class="dots"></span
+                  ><span class="item-price">$4.00</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Side of Chicken Sausage</span><span class="dots"></span
+                  ><span class="item-price">$3.00</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Side of Avocado</span><span class="dots"></span
+                  ><span class="item-price">$2.50</span>
+                </li>
+                <li class="menu-item d-flex justify-content-between">
+                  <span>Side of Fruit</span><span class="dots"></span
+                  ><span class="item-price">$3.00</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Visit Us</h4>
+            <ul style="list-style: none; padding: 0">
+              <li class="mb-3">
+                <i class="fi-xnsuxl-house-solid"></i>
+                <strong>Address:</strong><br />
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=1716+S+Sepulveda+Blvd+Unit+104+Los+Angeles+CA+90025"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  1716 S Sepulveda Blvd, Unit 104<br />
+                  Los Angeles, CA 90025
+                </a>
+
+                <div class="map-buttons mt-3">
+                  <a
+                    href="https://maps.apple.com/?q=1716+S+Sepulveda+Blvd,+Unit+104,+Los+Angeles,+CA+90025"
+                    class="btn-map apple-map"
+                    target="_blank"
+                  >
+                    <i class="bi bi-apple me-1"></i> Apple Maps
+                  </a>
+
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=1716+S+Sepulveda+Blvd+Unit+104+Los+Angeles+CA+90025"
+                    class="btn-map google-map"
+                    target="_blank"
+                  >
+                    <i class="bi bi-google me-1"></i> Google Maps
+                  </a>
+                </div>
+              </li>
+
+              <li class="mb-3">
+                <i class="fi-xnsrxl-phone-solid"></i>
+                <strong>Phone:</strong><br />
+                <a href="tel:4242483450" class="contact-link">
+                  +1 (424) 248-3450
+                </a>
+              </li>
+
+              <li class="mb-3 d-flex align-items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="me-2 mt-1"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+
+                <div>
+                  <strong>Hours:</strong><br />
+                  Mon - Sat: 7:00 AM - 3:00 PM<br />
+                  Sun: 8:00 AM - 3:00 PM
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Find Us</h4>
+            <p>Located on Sepulveda Blvd.</p>
+            <iframe
+              class="map-container"
+              src="https://maps.google.com/maps?q=1716+S+Sepulveda+Blvd+Unit+104+Los+Angeles+CA+90025&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="Prime Caffe West LA location map"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Quick Links</h4>
+            <ul style="list-style: none; padding: 0">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="menu.html" class="footer-link">Full Menu</a></li>
+              <li>
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="terms.html" class="footer-link">Terms of Service</a>
+              </li>
+            </ul>
+
+            <div class="mt-4">
+              <h4>Follow Us</h4>
+              <div class="d-flex gap-3">
+                <a href="https://www.instagram.com/" aria-label="Instagram"
+                  ><i class="fi-snsuxl-instagram"></i
+                ></a>
+                <a href="https://www.facebook.com/" aria-label="Facebook"
+                  ><i class="fi-snsuxl-facebook"></i
+                ></a>
+                <a href="https://www.tiktok.com/" aria-label="TikTok"
+                  ><i class="fi-snsuxl-tiktok-solid"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h4>Leave a Review</h4>
+            <p class="small text-muted">
+              Please give us a review on Yelp or Google!
+            </p>
+            <div class="d-flex gap-2">
+              <a
+                href="https://www.yelp.com/search?find_desc=Prime+Caffe+West+LA&find_loc=Los+Angeles%2C+CA"
+                target="_blank"
+                class="btn btn-outline-danger btn-sm"
+                style="border-radius: 20px"
+              >
+                <i class="fi-xnsuxl-star-solid"></i> Yelp
+              </a>
+
+              <a
+                href="https://www.google.com/search?q=Prime+Caffe+West+LA+Reviews"
+                target="_blank"
+                class="btn btn-outline-primary btn-sm"
+                style="border-radius: 20px"
+              >
+                <i class="bi bi-google"></i> Google
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p>© 2025 Prime Caffe West LA. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document
+        .getElementById("categoryToggle")
+        .addEventListener("click", function () {
+          const categoryList = document.getElementById("categoryList");
+          categoryList.classList.toggle("active");
+          this.querySelector(".toggle-icon").textContent =
+            categoryList.classList.contains("active") ? "▲" : "▼";
+        });
+
+      document.querySelectorAll(".category-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 768) {
+            document.getElementById("categoryList").classList.remove("active");
+            document
+              .getElementById("categoryToggle")
+              .querySelector(".toggle-icon").textContent = "▼";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

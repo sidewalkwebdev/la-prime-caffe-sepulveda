@@ -1,0 +1,885 @@
+:root {
+  --prime-green: #2e7d32;
+  --prime-brown: #5d4037;
+  --bg-white: #fffefa;
+  --text-dark: #1a1a1a;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  background-color: white;
+  border-bottom: 3px solid var(--prime-green);
+  padding: 1rem 5%;
+}
+
+.navbar-brand {
+  font-family: "Anton", sans-serif;
+  font-size: 1.8rem;
+  color: var(--prime-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--prime-brown);
+}
+
+/* Custom Login/Order Button */
+#sign-up-button {
+  background-color: var(--prime-brown);
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#header-view-menu {
+  background-color: var(--prime-brown);
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#header-view-menu:hover {
+  background-color: var(--prime-green);
+  transition: 0.7s;
+}
+#header-find-us {
+  border: none;
+  padding: 8px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#header-find-us:hover {
+  background-color: var(--prime-green);
+  transition: 0.7s;
+  color: white;
+}
+#sign-up-button:hover {
+  background-color: var(--prime-green);
+}
+
+/* Mobile navbar button centering */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    align-items: center !important;
+  }
+
+  #sign-up-button {
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+  }
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(assets/header-swan.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero video {
+  display: none;
+}
+
+#header-text {
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Hero Buttons */
+.btn-primary {
+  background-color: var(--prime-green);
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: var(--prime-brown);
+}
+
+/* --- MENU SECTION STYLES --- */
+.menu-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: 5px solid var(--prime-green);
+  padding: 30px 20px;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  border-color: var(--prime-brown);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category-title {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-brown);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.item-name {
+  background-color: #fff;
+  padding-right: 5px;
+  z-index: 1;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #ccc;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.item-price {
+  background-color: #fff;
+  padding-left: 5px;
+  color: var(--prime-green);
+  font-weight: bold;
+}
+/* --- POPULAR ITEMS SECTION --- */
+
+.popular-item-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* The zoom effect on the image when you hover */
+.popular-item-card:hover {
+  transform: translateY(-10px);
+}
+
+.popular-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.popular-item-card:hover .popular-img {
+  transform: scale(1.1);
+}
+
+/* The dark gradient at the bottom so the text is easy to read */
+.popular-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  color: white;
+  padding: 30px 20px 20px;
+  text-align: left;
+}
+
+.popular-overlay h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.popular-overlay p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Styling the "Best Seller" badges */
+.badge {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- TEXT MENU ADJUSTMENTS --- */
+
+/* Mobile fix: Ensure the photo cards don't get too squashed on small screens */
+@media (max-width: 768px) {
+  .popular-item-card {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/* --- MENU SECTION --- */
+.menu-title {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: var(--prime-green);
+}
+
+.menu-icon {
+  font-size: 2rem;
+  color: var(--prime-brown);
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #f4f4f4;
+  padding: 60px 0 20px;
+  border-top: 5px solid var(--prime-green);
+}
+
+footer h4 {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-green);
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+footer i {
+  color: var(--prime-brown);
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover {
+  color: var(--prime-brown);
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 200px;
+  border: 2px solid var(--prime-brown);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Menu Hero Section */
+.menu-hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/bg-image-menu.jpg") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Special layout for items with descriptions */
+.menu-item.flex-column {
+  margin-bottom: 20px;
+}
+
+.menu-item small {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Ensure the dots stay centered between text and price */
+.menu-item .d-flex {
+  width: 100%;
+}
+
+.description-text {
+  display: block;
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 5px;
+  line-height: 1.4;
+  font-style: italic;
+  max-width: 85%;
+}
+/* --- FOOTER CONTACT LINKS --- */
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--prime-brown);
+  text-decoration: underline;
+}
+
+/* --- MAP BUTTONS --- */
+.map-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-map {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.75rem; /* Smaller text for compact buttons */
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  color: white !important; /* Forces text to stay white */
+}
+
+.btn-map:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+/* Apple Maps - Black */
+.apple-map {
+  background-color: #000;
+}
+
+/* Google Maps - Blue */
+.google-map {
+  background-color: #4285f4;
+}
+/* --- ORDER PAGE STYLES --- */
+
+.order-hero {
+  position: relative;
+  height: 50vh; /* Shorter than home hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* Darker overlay so text pops */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2000&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.order-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  border-top: 6px solid var(--prime-brown);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.order-card h3 {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-green);
+  font-size: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.order-card p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+  color: var(--prime-brown);
+  margin-bottom: 10px;
+}
+
+/* Specific buttons for apps */
+.app-btn {
+  padding: 10px;
+  font-weight: 600;
+  border-width: 2px;
+  margin-bottom: 10px;
+}
+
+.app-btn:hover {
+  opacity: 0.9;
+}
+/* --- Custom Clock Style --- */
+.clock-outline-black {
+  color: black !important; /* Overrides the default brown */
+}
+
+/* --- ABOUT PAGE STYLES --- */
+
+.about-hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* Interior shot for background */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/about-us-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Review Cards */
+.review-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  height: 100%; /* Makes cards equal height in rows */
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #ffc107; /* Bootstrap yellow */
+  letter-spacing: 2px;
+}
+
+.review-author {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--prime-brown);
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* --- CATEGORY NAVIGATION BAR --- */
+.category-nav {
+  background-color: white;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 70px; /* Adjust based on your main navbar height */
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-nav .container {
+  position: relative;
+}
+
+.category-toggle {
+  display: none;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--prime-green);
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-toggle:hover {
+  background-color: var(--prime-brown);
+}
+
+.toggle-icon {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 15px 20px;
+  margin: 0;
+  list-style: none;
+  max-width: 100%;
+}
+
+.category-list li {
+  margin: 0;
+}
+
+.category-link {
+  display: block;
+  padding: 10px 18px;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.category-link:hover {
+  background-color: var(--prime-green);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.category-link.active {
+  background-color: var(--prime-brown);
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .category-nav {
+    top: 60px; /* Adjust for mobile navbar height */
+  }
+
+  .category-toggle {
+    display: flex;
+  }
+
+  .category-list {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-list.active {
+    display: flex;
+  }
+
+  .category-list li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .category-list li:last-child {
+    border-bottom: none;
+  }
+
+  .category-link {
+    padding: 15px 20px;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .category-link:hover {
+    transform: none;
+    background-color: #f5f5f5;
+    color: var(--prime-green);
+  }
+
+  .category-link.active {
+    background-color: var(--prime-green);
+    color: white;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  .category-link {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px; /* Offset for sticky navbars */
+}
+.privacy-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.privacy-title {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-brown);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.privacy-content {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+.privacy-content h3 {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-green);
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.privacy-content ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.privacy-content li {
+  margin-bottom: 10px;
+}
+
+.privacy-content address {
+  font-style: normal;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid var(--prime-brown);
+  margin-top: 20px;
+}
+
+/* --- LEGAL PAGES (Terms & Privacy) --- */
+.legal-section,
+.privacy-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.legal-title,
+.privacy-title {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-brown);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.legal-content,
+.privacy-content {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+.legal-content h3,
+.privacy-content h3 {
+  font-family: "Anton", sans-serif;
+  color: var(--prime-green);
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.legal-content ul,
+.privacy-content ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.legal-content li,
+.privacy-content li {
+  margin-bottom: 10px;
+}
+
+.legal-content address,
+.privacy-content address {
+  font-style: normal;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid var(--prime-brown);
+  margin-top: 20px;
+}
+
+/* Utility Classes to Replace Inline Styles */
+.no-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.active-nav-link {
+  color: var(--prime-green) !important;
+}
+
+.large-section-title {
+  font-size: 2.5rem;
+}
+
+.elite-badge {
+  font-size: 0.6rem;
+}
+
+.owner-quote-container {
+  max-width: 700px;
+}
+
+.owner-quote-icon {
+  font-size: 3rem;
+  color: var(--prime-green);
+  opacity: 0.3;
+}
+
+.owner-quote-title {
+  font-family: "Anton", sans-serif;
+}
+
+.owner-quote-text {
+  font-style: italic;
+}
+
+.owner-name {
+  font-weight: bold;
+  color: var(--prime-brown);
+}
+
+.upgrade-box {
+  background-color: rgba(46, 125, 50, 0.1);
+  border: 1px dashed var(--prime-green);
+}
+
+.upgrade-box-brown {
+  background-color: rgba(93, 64, 55, 0.05);
+  border: 1px dashed var(--prime-brown);
+}
+
+.upgrade-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--prime-green);
+  text-transform: uppercase;
+}
+
+.upgrade-title-brown {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--prime-brown);
+  text-transform: uppercase;
+}
+
+.upgrade-item {
+  font-size: 0.85rem;
+}
+/* 1. Card Container Styling */
+.order-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px; /* Rounded corners */
+  padding: 2rem; /* Spacing inside the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* 2. Icon Styling */
+.icon-wrapper {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* 3. Call Button (Blue) */
+/* Targets the class .btn-outline-primary inside the order card */
+.order-card .btn-outline-primary {
+  color: #0d6efd; /* Blue Text */
+  border-color: #0d6efd; /* Blue Border */
+  background-color: transparent;
+}
+
+.order-card .btn-outline-primary:hover {
+  background-color: #0d6efd; /* Blue Background on hover */
+  color: #ffffff; /* White Text on hover */
+}
+
+/* 4. Toast Button (Green) */
+/* Targets the class .btn-primary inside the order card */
+.order-card .btn-primary {
+  background-color: #198754; /* Green Background */
+  border-color: #198754; /* Green Border */
+  color: #ffffff;
+}
+
+.order-card .btn-primary:hover {
+  background-color: #157347; /* Darker Green on hover */
+  border-color: #146c43;
+}
